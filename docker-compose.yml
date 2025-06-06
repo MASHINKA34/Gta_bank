@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:16
+    container_name: gta-postgres
+    environment:
+      POSTGRES_DB: gta_rp_atm
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
